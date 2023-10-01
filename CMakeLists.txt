@@ -1,12 +1,12 @@
-cmake_minimum_required(3.20.0)
+cmake_minimum_required(VERSION 3.20.0)
 
 project(
 	Template
 )
 
-add_library(
-	${PROJECT_NAME}
-)
+# add_library(
+# 	${PROJECT_NAME}
+# )
 
 add_executable(
 	${PROJECT_NAME}
@@ -58,7 +58,7 @@ target_compile_options(
 target_link_options(
 	${PROJECT_NAME}
 	PRIVATE
-		"-Wl, --gc-sections" # Remove unwanted/unused sections
+		"-Wl,--gc-sections" # Remove unwanted/unused sections
 		"-flto" # Link time optimization
 		"-fno-fat-lto-objects" # Link time optimization
 )
