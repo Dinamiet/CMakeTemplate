@@ -12,6 +12,7 @@ add_executable(
 	${PROJECT_NAME}
 )
 
+# Doxygen document generation
 find_package(Doxygen)
 if (DOXYGEN_FOUND AND NOT DOXYGEN_IN)
 
@@ -29,7 +30,6 @@ if (DOXYGEN_FOUND AND NOT DOXYGEN_IN)
 			"Generate documentation with Doxygen"
 		VERBATIM
 	)
-
 endif()
 
 target_compile_options(
