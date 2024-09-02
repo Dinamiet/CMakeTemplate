@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	printf("Project %s", PROJECT_NAME);
 	return 0;
