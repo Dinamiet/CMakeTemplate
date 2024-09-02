@@ -1,5 +1,8 @@
 # Build directory
 build/
 
+#clangd linting and checking cache
+.cache/
+
 # External libraries
 lib/**/
