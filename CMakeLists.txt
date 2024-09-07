@@ -46,9 +46,9 @@ target_compile_options(
 		"-Wformat-truncation" # printf and scanf warnings
 		"-Wundef" # Warn when evaluating not defined flags
 		"-fno-common" # Warn about multiple global variables with the same name
-		"-Wconversion" # Warn about implicit conversions
 		"-Wuninitialized" # Warn about uninitialized’ variables
-		"-Wpadded" # Warn about padded structures
+		#"-Wconversion" # Warn about implicit conversions
+		#"-Wpadded" # Warn about padded structures
 		"-flto" # Link time optimization
 		"-fno-fat-lto-objects" # Link time optimization
 		"-ffunction-sections" # Link time optimization help
